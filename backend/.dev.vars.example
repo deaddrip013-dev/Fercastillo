@@ -1,0 +1,2 @@
+# Local-only value. Replace with a fresh random token before using /api/auth/setup.
+ADMIN_SETUP_TOKEN=replace-with-a-local-random-token

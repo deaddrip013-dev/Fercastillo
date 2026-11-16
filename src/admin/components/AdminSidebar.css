@@ -1,0 +1,13 @@
+.admin-navigation { position: relative; z-index: 20; display: flex; align-items: center; gap: 28px; min-height: 64px; padding: 10px 32px; border-bottom: 1px solid #292621; background: #090909; color: #f1ebdd; }
+.admin-navigation-brand { display: flex; flex-direction: column; gap: 4px; color: #f1ebdd; text-decoration: none; font-size: 18px; font-style: italic; font-weight: 900; letter-spacing: -1px; white-space: nowrap; }
+.admin-navigation-brand sup { font-size: 8px; }
+.admin-navigation-brand small { color: #938b7e; font: 8px monospace; letter-spacing: 1.5px; }
+.admin-navigation nav { display: flex; align-items: center; flex: 1; gap: 5px; }
+.admin-navigation-link { padding: 11px 12px; border-bottom: 1px solid transparent; color: #aaa39a; font-size: 11px; text-decoration: none; transition: color .2s, border-color .2s; }
+.admin-navigation-link:hover, .admin-navigation-link.active { border-color: #b99b65; color: #f1ebdd; }
+.admin-navigation-account { display: flex; align-items: center; gap: 12px; }
+.admin-navigation-account span { max-width: 180px; color: #f0b0a5; font-size: 10px; }
+.admin-navigation-account button { padding: 9px 11px; border: 1px solid #39352f; background: transparent; color: #b8b0a2; font-size: 10px; cursor: pointer; }
+.admin-navigation-account button:hover { border-color: #b99b65; color: #f1ebdd; }
+@media (max-width: 900px) { .admin-navigation { flex-wrap: wrap; gap: 8px 18px; padding: 12px 18px; } .admin-navigation nav { order: 3; width: 100%; overflow-x: auto; } .admin-navigation-link { flex: 0 0 auto; } .admin-navigation-account { margin-left: auto; } }
+@media (max-width: 480px) { .admin-navigation { padding: 12px; } .admin-navigation-brand { font-size: 15px; } .admin-navigation-account button { padding: 8px; font-size: 9px; } .admin-navigation-link { padding: 10px 8px; font-size: 10px; } }

@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "fercastillo-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-13",
+  "observability": {
+    "enabled": false
+  },
+  "vars": {
+    "FRONTEND_ORIGIN": "http://localhost:5173,https://YOUR-FERCASTILLO-PAGES-DOMAIN.pages.dev"
+  }
+}

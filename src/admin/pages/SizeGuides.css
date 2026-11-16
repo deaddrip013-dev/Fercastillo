@@ -1,0 +1,51 @@
+.size-guides-admin { min-height: 100%; padding: 35px; background: #090909; color: #f1ebdd; }
+.size-guides-admin-heading { margin-bottom: 25px; }
+.size-guides-admin-heading > div > span, .size-guides-editor-title > div > span { color: #b99b65; font: 700 10px monospace; letter-spacing: 2px; }
+.size-guides-admin-heading h1 { margin: 10px 0 5px; font-size: clamp(32px,4vw,48px); }
+.size-guides-admin-heading h1 > span { color: #922b2b; }
+.size-guides-admin-heading p { color: #938b7e; font-size: 13px; }
+.size-guides-admin-panel { margin-bottom: 16px; border: 1px solid #292621; background: #11100e; padding: 22px; }
+.size-guides-category-picker { display: grid; grid-template-columns: minmax(140px, .3fr) minmax(220px, .7fr) 1fr; align-items: center; gap: 14px; color: #b8b0a2; font-size: 12px; }
+.size-guides-category-picker select, .size-guide-field input, .size-guide-field textarea, .size-guide-edit-table input { width: 100%; min-width: 0; padding: 10px 11px; border: 1px solid #39352f; border-radius: 0; background: #090909; color: #f1ebdd; }
+.size-guides-category-picker span { color: #938b7e; font-size: 11px; }
+.size-guides-editor { display: grid; gap: 20px; }
+.size-guides-editor-title { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid #292621; }
+.size-guides-editor-title h2 { margin: 7px 0 0; font-size: 22px; }
+.size-guide-badge { padding: 5px 8px; border: 1px solid #49443b; color: #aaa39a; font: 9px monospace; letter-spacing: 1px; }
+.size-guide-badge.is-configured { border-color: #526449; color: #b9cba8; }
+.size-guide-field { display: grid; gap: 8px; color: #b8b0a2; font-size: 11px; }
+.size-guide-field textarea { resize: vertical; line-height: 1.5; }
+.size-guide-units { max-width: 420px; }
+.size-guide-table-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.size-guide-table-heading h3 { margin: 0 0 5px; font-size: 16px; }
+.size-guide-table-heading p { margin: 0; color: #938b7e; font-size: 11px; }
+.size-guide-action, .size-guide-save, .size-guide-delete { padding: 10px 13px; border: 1px solid #74613b; background: #191613; color: #e4d5b3; font-size: 10px; cursor: pointer; }
+.size-guide-action:disabled, .size-guide-delete:disabled, .size-guide-save:disabled { opacity: .5; cursor: not-allowed; }
+.size-guide-table-scroll { width: 100%; overflow-x: auto; border: 1px solid #292621; }
+.size-guide-edit-table { min-width: 650px; width: 100%; border-collapse: collapse; text-align: left; }
+.size-guide-edit-table th, .size-guide-edit-table td { padding: 8px; border-bottom: 1px solid #292621; }
+.size-guide-edit-table th { background: #171513; }
+.size-guide-edit-table th > div { display: flex; align-items: center; gap: 6px; }
+.size-guide-edit-table th button, .size-guide-remove-row { border: 1px solid #39352f; background: transparent; color: #d89a8d; padding: 8px; font-size: 10px; }
+.size-guide-edit-table th button:disabled, .size-guide-remove-row:disabled { opacity: .35; cursor: not-allowed; }
+.size-guide-edit-table input { padding: 9px; font-size: 11px; }
+.size-guide-row-action-header { width: 88px; color: #938b7e; font: 10px monospace; }
+.size-guide-add-row { justify-self: start; }
+.size-guide-editor-footer { display: flex; justify-content: space-between; gap: 12px; padding-top: 16px; border-top: 1px solid #292621; }
+.size-guide-delete { border-color: #694139; background: #241513; color: #f0b0a5; }
+.size-guide-save { min-width: 145px; background: #2a2419; }
+.size-guides-admin-message { margin-bottom: 14px; padding: 12px 14px; border: 1px solid #39352f; font-size: 12px; }
+.size-guides-admin-message.error { border-color: #694139; color: #f0b0a5; }
+.size-guides-admin-message.success { border-color: #526449; color: #b9cba8; }
+@media (max-width: 720px) {
+    .size-guides-admin { padding: 20px; }
+    .size-guides-admin-panel { padding: 16px; }
+    .size-guides-category-picker { grid-template-columns: 1fr; gap: 9px; }
+    .size-guide-table-heading { align-items: flex-start; flex-direction: column; }
+}
+@media (max-width: 420px) {
+    .size-guides-admin { padding: 16px; }
+    .size-guides-admin-panel { padding: 13px; }
+    .size-guide-editor-footer { align-items: stretch; flex-direction: column-reverse; }
+    .size-guide-save, .size-guide-delete { width: 100%; min-height: 42px; }
+}

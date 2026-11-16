@@ -1,0 +1,190 @@
+
+.collections-page {
+    padding: 32px;
+    min-width: 0;
+    color: #f2eee7;
+}
+
+.collections-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.collections-eyebrow {
+    color: #b99b65;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.collections-header h1 {
+    margin: 8px 0;
+    font-size: 30px;
+}
+
+    .collections-header h1 span {
+        color: #b99b65;
+    }
+
+.collections-header p {
+    color: #99938b;
+    font-size: 14px;
+}
+
+.collections-counter,
+.collections-panel {
+    background: #191816;
+    border: 1px solid #302d28;
+}
+
+.collections-counter {
+    padding: 20px 25px;
+    min-width: 180px;
+}
+
+    .collections-counter span {
+        display: block;
+        color: #99938b;
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .collections-counter strong {
+        display: block;
+        margin-top: 10px;
+        font-size: 28px;
+    }
+
+.collections-panel {
+    padding: 24px;
+}
+
+.collections-panel-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+    .collections-panel-heading h2 {
+        margin: 8px 0 0;
+        font-size: 20px;
+    }
+
+.collections-total {
+    color: #a59d91;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.collections-table-wrapper {
+    overflow-x: auto;
+}
+
+.collections-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    white-space: nowrap;
+}
+
+    .collections-table th {
+        color: #a59d91;
+        font-size: 10px;
+        letter-spacing: 1px;
+        padding: 15px 12px;
+        border-bottom: 1px solid #39352f;
+    }
+
+    .collections-table td {
+        padding: 18px 12px;
+        color: #c9c3b9;
+        font-size: 12px;
+        border-bottom: 1px solid #292722;
+    }
+
+        .collections-table td strong {
+            color: #f2eee7;
+        }
+
+.collection-status {
+    display: inline-block;
+    padding: 5px 9px;
+    border: 1px solid #74613b;
+    color: #d2bd8c;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+    .collection-status.status-published {
+        color: #b9cba8;
+        border-color: #526449;
+    }
+
+    .collection-status.status-archived {
+        color: #aaa39a;
+        border-color: #49443b;
+    }
+
+.collections-empty,
+.collections-error {
+    padding: 45px 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #99938b;
+}
+
+.collections-error {
+    color: #f0b0a5;
+}
+
+.collection-action, .collection-cancel, .collection-actions button {
+    padding: 10px 14px;
+    border: 1px solid #74613b;
+    background: #191816;
+    color: #d2bd8c;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.collection-editor {
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin: 0 0 22px;
+    padding: 20px;
+    background: #191816;
+    border: 1px solid #302d28;
+}
+
+.collection-editor h2 { width: 100%; margin: 0; font-size: 17px; }
+.collection-editor label { display: grid; gap: 7px; color: #a59d91; font-size: 10px; letter-spacing: 1px; }
+.collection-editor input, .collection-editor select, .collection-editor textarea { min-width: 180px; padding: 10px; border: 1px solid #39352f; background: #090909; color: #f2eee7; }
+.collection-description-field, .collection-cover-field { flex: 1 1 100%; }
+.collection-editor textarea { width: 100%; resize: vertical; }
+.collection-editor input[type="file"] { max-width: 100%; }
+.collection-cover-preview { width: min(100%, 280px); max-height: 230px; object-fit: cover; border: 1px solid #39352f; }
+.collection-editor-actions { display: flex; flex-wrap: wrap; gap: 10px; width: 100%; }
+.cover-indicator { display: block; margin-top: 6px; color: #b9cba8; font-size: 9px; }
+.collection-actions { display: flex; gap: 8px; }
+.collection-actions button:last-child { color: #d89a8d; border-color: #694139; }
+
+@media (max-width: 650px) {
+    .collections-page {
+        padding: 20px;
+    }
+
+    .collections-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .collections-panel {
+        padding: 15px;
+    }
+}
