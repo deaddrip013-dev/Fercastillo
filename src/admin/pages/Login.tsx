@@ -78,7 +78,7 @@ function Login() {
         <main className="login-screen">
 
             <div className="login-top">
-                <span>FerCastillo®</span>
+                <span><img src="/fercastillo-logo.jpg" alt="FerCastillo" /></span>
                 <span>ADMINISTRATION SYSTEM</span>
             </div>
 
@@ -90,8 +90,8 @@ function Login() {
                     </span>
 
                     <h1>
-                        CONTROL<br />
-                        THE CULTURE<span>.</span>
+                        MODA CON<br />
+                        ESENCIA<span>.</span>
                     </h1>
 
                     <p>

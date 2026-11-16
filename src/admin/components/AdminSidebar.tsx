@@ -28,7 +28,7 @@ export default function AdminSidebar() {
     }
 
     return <header className="admin-navigation">
-        <NavLink className="admin-navigation-brand" to="/admin">FerCastillo<sup>®</sup><small>CONTROL CENTER</small></NavLink>
+        <NavLink className="admin-navigation-brand" to="/admin"><img src="/fercastillo-logo.jpg" alt="" /><span>FerCastillo<sup>®</sup><small>CONTROL CENTER</small></span></NavLink>
         <nav aria-label="Navegación administrativa">{links.map(link => <NavLink key={link.to} to={link.to} end={link.end} className={({ isActive }) => `admin-navigation-link${isActive ? ' active' : ''}`}>{link.label}</NavLink>)}</nav>
         <div className="admin-navigation-account">{error && <span role="alert">{error}</span>}<button onClick={() => void handleLogout()}>Cerrar sesión ↗</button></div>
     </header>;

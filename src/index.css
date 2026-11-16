@@ -2,9 +2,9 @@
    Reemplaza el contenido anterior de src/index.css. */
 
 :root {
-    font-family: Inter, Arial, sans-serif;
+    font-family: 'Manrope', 'Avenir Next', Arial, sans-serif;
     color: #eeeadd;
-    background: #090909;
+    background: #fff;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -27,7 +27,7 @@ body {
     min-width: 320px;
     min-height: 100vh;
     margin: 0;
-    background: #090909;
+    background: #fff;
 }
 
 #root {
@@ -58,17 +58,17 @@ img {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background: #090909;
-    color: #eeeadd;
-    font-family: monospace;
+    background: #fff8fa;
+    color: #21181c;
+    font-family: 'Manrope', Arial, sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
 }
 
     .route-loading button {
         padding: 12px 20px;
-        background: #eeeadd;
-        color: #090909;
+        background: #d886a2;
+        color: #fff;
         border: none;
         cursor: pointer;
     }
