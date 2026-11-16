@@ -801,7 +801,7 @@ export default {
             }
             const totalCop = validatedItems.reduce((total, item) => total + item.subtotal, 0);
             if (!Number.isSafeInteger(totalCop)) return json({ success: false, message: "El total del pedido supera el límite permitido." }, 400, origin);
-            const orderNumber = `DR-${crypto.randomUUID().slice(0, 8).toUpperCase()}`;
+            const orderNumber = `FC-${crypto.randomUUID().slice(0, 8).toUpperCase()}`;
             return json({ success: true, orderNumber, totalCop, whatsappNumber, customerPhone: `57${customerPhone}`, deliveryMethod, city, neighborhood, customerAddress, customerNotes, items: validatedItems.map(({ name, sku, size, quantity, unitPrice, subtotal }) => ({ name, sku, size, quantity, unitPrice, subtotal })) }, 200, origin);
         }
 

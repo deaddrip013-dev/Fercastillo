@@ -33,10 +33,16 @@ body { background: #fff; color: var(--brand-ink); }
 .site .product-info h3 { font-size: 20px; }
 .site .collection-cover-card { border-radius: 3px; }
 .site .product-image { background: #fff6f9; }
+.site .product-label { background: var(--brand-pink); color: #fff; font-family: var(--body-font); font-size: 10px; letter-spacing: .08em; }
 .site .product-card:hover .product-image { box-shadow: 0 12px 34px #a9456818; }
+.site .detail-copy > .menu-label { color: var(--brand-pink-deep); }
 .site .outline-link, .site .checkout-button, .site .detail-add { border-radius: 2px; letter-spacing: .08em; }
 .site .outline-link, .site .checkout-button, .site .detail-add { border-color: var(--brand-pink); background: var(--brand-pink); color: #fff; }
 .site .outline-link:hover, .site .checkout-button:hover, .site .detail-add:hover { background: var(--brand-pink-deep); color: #fff; }
+/* Las reglas antiguas de App.css usan selectores más específicos para estos botones. */
+.site button.detail-add, .site button.checkout-button { border-color: var(--brand-pink) !important; background: var(--brand-pink) !important; color: #fff !important; }
+.site button.detail-add:hover:not(:disabled), .site button.checkout-button:hover:not(:disabled) { border-color: var(--brand-pink-deep) !important; background: var(--brand-pink-deep) !important; color: #fff !important; }
+.site button.detail-add:disabled, .site button.checkout-button:disabled { border-color: #e7cbd6 !important; background: #f4e5eb !important; color: #886b76 !important; opacity: 1; cursor: not-allowed; }
 .site .brand { color: var(--brand-ink); }
 .site .brand-logo { width: 100px; height: 64px; overflow: hidden; display: flex; align-items: center; justify-content: center; transform: none; }
 .site .brand-logo img { width: 84px; height: 84px; max-width: none; object-fit: contain; mix-blend-mode: multiply; }
