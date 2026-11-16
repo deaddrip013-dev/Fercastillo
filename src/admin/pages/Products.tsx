@@ -261,7 +261,7 @@ export default function Products() {
                                     event.target.value = '';
                                 }} />
                             </label>
-                            {!editingId && <small className="products-image-note">Las fotografías se cargarán a R2 después de crear el producto. Configura el binding IMAGES del Worker antes de guardar archivos.</small>}
+                            {!editingId && <small className="products-image-note">Las fotografías seleccionadas se guardarán en el bucket R2 al crear el producto.</small>}
                             {(images.length > 0 || imagePreviews.length > 0) && <div className="products-images-grid">
                                 {images.map(image => <article key={image.id} className="products-image-card">
                                     <img src={getMediaUrl(image.imageKey)} alt={image.altText || form.name} onError={event => { event.currentTarget.src = imagePlaceholder; }} />

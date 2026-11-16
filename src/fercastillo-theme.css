@@ -91,6 +91,17 @@ body { background: #fff; color: var(--brand-ink); }
 .admin-shell .admin-dashboard a.shortcut-card:hover { border-color: var(--brand-pink) !important; background: #fff0f5 !important; }
 .admin-shell .settings-phone { background: #fff !important; border-color: #e6ccd6 !important; }
 .admin-shell .settings-phone > span { background: #fff0f5 !important; color: var(--brand-pink-deep) !important; border-color: #e6ccd6 !important; }
+.admin-shell .products-modal-header h2, .admin-shell .products-modal .products-field { color: var(--brand-ink) !important; }
+.admin-shell .products-close-button { color: var(--brand-pink-deep) !important; }
+.admin-shell .products-sizes-section, .admin-shell .products-images-section { border-color: #eadde2 !important; }
+.admin-shell .product-size-option { background: #fff !important; border-color: #e6ccd6 !important; color: var(--brand-ink) !important; }
+.admin-shell .product-size-option.selected { background: #fff0f5 !important; border-color: var(--brand-pink) !important; }
+.admin-shell .product-size-option input { accent-color: var(--brand-pink-deep) !important; }
+.admin-shell .product-size-option strong { color: var(--brand-ink) !important; }
+.admin-shell .product-size-option span { color: #806b74 !important; }
+.admin-shell .product-size-option.selected span { color: var(--brand-pink-deep) !important; }
+.admin-shell .products-sizes-heading p, .admin-shell .products-field small { color: #806b74 !important; }
+.admin-shell .products-image-note { color: var(--brand-pink-deep) !important; }
 .admin-shell input:not([type="checkbox"]), .admin-shell textarea, .admin-shell select { background-color: #fff !important; color: var(--brand-ink) !important; border-color: #e6ccd6 !important; border-radius: 2px; }
 .admin-shell input:focus, .admin-shell textarea:focus, .admin-shell select:focus { border-color: var(--brand-pink) !important; outline-color: #d886a255; }
 .admin-shell button:not(.admin-navigation-account button) { border-color: #eadde2; background-color: #fff; color: #5d454f; }
