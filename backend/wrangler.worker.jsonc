@@ -6,7 +6,21 @@
   "observability": {
     "enabled": false
   },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "fercastillo-local",
+      "database_id": "00000000-0000-4000-8000-000000000001",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "IMAGES",
+      "bucket_name": "fercastillo-local"
+    }
+  ],
   "vars": {
-    "FRONTEND_ORIGIN": "http://localhost:5173,https://YOUR-FERCASTILLO-PAGES-DOMAIN.pages.dev"
+    "FRONTEND_ORIGIN": "http://localhost:5173,https://fercastillo.pages.dev"
   }
 }

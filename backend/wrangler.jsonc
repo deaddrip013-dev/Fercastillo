@@ -3,7 +3,21 @@
   "name": "fercastillo-api",
   "main": "src/index.ts",
   "compatibility_date": "2026-11-13",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "fercastillo",
+      "database_id": "b82452cd-fc4d-42d8-8b8c-b5c6b395931c",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "IMAGES",
+      "bucket_name": "fercastillo"
+    }
+  ],
   "vars": {
-    "FRONTEND_ORIGIN": "https://YOUR-FERCASTILLO-PAGES-DOMAIN.pages.dev"
+    "FRONTEND_ORIGIN": "https://fercastillo.pages.dev"
   }
 }
