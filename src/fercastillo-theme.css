@@ -75,9 +75,22 @@ body { background: #fff; color: var(--brand-ink); }
 .admin-shell .admin-navigation-link:hover, .admin-shell .admin-navigation-link.active { color: var(--brand-pink-deep); border-color: var(--brand-pink); }
 .admin-shell .admin-navigation-account button { border-color: #eadde2; background: #fff; color: #6e5e64; }
 .admin-shell .admin-navigation-account button:hover { border-color: var(--brand-pink); color: var(--brand-pink-deep); }
-.admin-shell main[class] { background: #fff8fa; color: var(--brand-ink); }
+.admin-shell main[class], .admin-shell .admin-dashboard, .admin-shell [class$="-page"] { background: #fff8fa; color: var(--brand-ink); }
 .admin-shell h1, .admin-shell h2, .admin-shell h3 { font-family: var(--heading); font-weight: 600; letter-spacing: -.025em; }
-.admin-shell section[class*="panel"], .admin-shell .products-stat, .admin-shell .dashboard-welcome, .admin-shell .dashboard-shortcut, .admin-shell .categories-stats article, .admin-shell .categories-panel, .admin-shell .settings-panel, .admin-shell .size-guides-admin-panel, .admin-shell .products-table-wrap, .admin-shell .inventory-panel { background-color: #fff !important; color: var(--brand-ink); border-color: #eadde2 !important; }
+.admin-shell section[class*="panel"], .admin-shell [class*="stats"] article, .admin-shell [class*="stat-card"], .admin-shell [class*="counter"], .admin-shell .stat-card, .admin-shell .dashboard-welcome, .admin-shell .shortcut-card, .admin-shell .activity-empty, .admin-shell .products-panel, .admin-shell .collections-panel, .admin-shell .settings-panel, .admin-shell .size-guides-admin-panel, .admin-shell .inventory-panel, .admin-shell .category-modal { background: #fff !important; color: var(--brand-ink) !important; border-color: #eadde2 !important; }
+.admin-shell .dashboard-welcome { background: linear-gradient(115deg, #fff 0%, #fff0f5 68%, #f7dbe5 100%) !important; }
+.admin-shell .dashboard-welcome h2, .admin-shell .stat-card strong, .admin-shell .products-stats strong, .admin-shell .collections-counter strong, .admin-shell .inventory-stat-card strong, .admin-shell .categories-stats strong { color: var(--brand-ink) !important; }
+.admin-shell .dashboard-welcome p, .admin-shell .dashboard-heading p, .admin-shell .dashboard-date strong, .admin-shell .shortcut-card p { color: #725e66 !important; }
+.admin-shell .welcome-mark { color: #d886a236 !important; }
+.admin-shell .dashboard-section-title { border-color: #eadde2 !important; }
+.admin-shell .admin-eyebrow, .admin-shell .dashboard-section-title, .admin-shell .dashboard-date span { color: var(--brand-pink-deep) !important; }
+.admin-shell .admin-dashboard a.shortcut-card, .admin-shell .admin-dashboard a.shortcut-card:link, .admin-shell .admin-dashboard a.shortcut-card:visited, .admin-shell .admin-dashboard a.shortcut-card:hover, .admin-shell .admin-dashboard a.shortcut-card:active { color: var(--brand-ink) !important; background: #fff !important; border-color: #eadde2 !important; }
+.admin-shell .admin-dashboard a.shortcut-card h3 { color: var(--brand-ink) !important; }
+.admin-shell .admin-dashboard a.shortcut-card p { color: #725e66 !important; }
+.admin-shell .admin-dashboard a.shortcut-card .shortcut-icon, .admin-shell .admin-dashboard a.shortcut-card .shortcut-arrow { color: var(--brand-pink-deep) !important; }
+.admin-shell .admin-dashboard a.shortcut-card:hover { border-color: var(--brand-pink) !important; background: #fff0f5 !important; }
+.admin-shell .settings-phone { background: #fff !important; border-color: #e6ccd6 !important; }
+.admin-shell .settings-phone > span { background: #fff0f5 !important; color: var(--brand-pink-deep) !important; border-color: #e6ccd6 !important; }
 .admin-shell input:not([type="checkbox"]), .admin-shell textarea, .admin-shell select { background-color: #fff !important; color: var(--brand-ink) !important; border-color: #e6ccd6 !important; border-radius: 2px; }
 .admin-shell input:focus, .admin-shell textarea:focus, .admin-shell select:focus { border-color: var(--brand-pink) !important; outline-color: #d886a255; }
 .admin-shell button:not(.admin-navigation-account button) { border-color: #eadde2; background-color: #fff; color: #5d454f; }
@@ -89,6 +102,7 @@ body { background: #fff; color: var(--brand-ink); }
 .admin-shell table th { background: #fff0f5 !important; color: #795765 !important; border-color: #eadde2 !important; }
 .admin-shell table td, .admin-shell table tr { color: #4d3e44 !important; border-color: #f0e3e8 !important; }
 .admin-shell [class*="modal"]:not([class*="backdrop"]):not([class*="overlay"]), .admin-shell [class*="editor"] { background-color: #fff !important; color: var(--brand-ink) !important; border-color: #eadde2 !important; }
+.admin-shell [class*="header"] h1 span, .admin-shell [class*="heading"] h1 span { color: var(--brand-pink-deep) !important; }
 .login-screen { background: linear-gradient(125deg, #fff8fa, #f8e5ec 60%, #dfabc0) !important; color: var(--brand-ink) !important; }
 .login-top, .login-footer { color: #806b74 !important; }
 .login-top span:first-child { display: flex; align-items: center; }
