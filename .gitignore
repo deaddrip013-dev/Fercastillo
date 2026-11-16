@@ -38,3 +38,4 @@ public/deaddrip-client-logo.jpg
 public/images/products/*.png
 public/images/collections/*.png
 worker-configuration.d.ts
+backend/d1-schema.txt
